@@ -1,16 +1,11 @@
 /* eslint-disable react/prop-types */
-import { Navigate, Route, Routes } from "react-router-dom";
+
+import { Navigate } from "react-router-dom";
 import { useAuth } from "../context/AuthContext";
 
-const PrivateRoute = ({ component: Component, ...rest }) => {
+const PrivateRoute = ({ children }) => {
   const { currentUser } = useAuth();
-  return currentUser ? (
-    <Routes>
-      <Route {...rest} render={(props) => <Component {...props} />} />
-    </Routes>
-  ) : (
-    <Navigate to="/login" replace />
-  );
+  return currentUser ? children : <Navigate to="/login" />;
 };
 
 export default PrivateRoute;

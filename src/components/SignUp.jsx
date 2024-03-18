@@ -1,3 +1,4 @@
+/* eslint-disable no-undef */
 import { useLayoutEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { useAuth } from "../context/AuthContext";
@@ -16,7 +17,7 @@ const SignUp = () => {
     if (currentUser) {
       navigate("/");
     } else {
-      navigate("/signup");
+      return;
     }
   }, []);
 
