@@ -13,30 +13,21 @@ const Navigation = () => {
       console.log("Failed to log out");
     }
   }
+
   return (
-    <nav className="navbar navbar-expand-lg navbar-light bg-light">
-      <button
-        className="navbar-toggler"
-        type="button"
-        data-toggle="collapse"
-        data-target="#navbarTogglerDemo03"
-        aria-controls="navbarTogglerDemo03"
-        aria-expanded="false"
-        aria-label="Toggle navigation"
-      >
-        <span className="navbar-toggler-icon"></span>
-      </button>
+    <nav className="navbar navbar-expand-lg gap-5">
       <Link to="/" className="navbar-brand" href="#">
         We Music
       </Link>
 
-      <div className="collapse navbar-collapse" id="navbarTogglerDemo03">
+      <div className=" navbar-collapse  " id="navbarTogglerDemo03">
         <ul className="navbar-nav mr-auto mt-2 mt-lg-0">
           <li className="nav-item active">
             <Link className="nav-item nav-link active" to={`/`}>
               Home
             </Link>
           </li>
+
           <li className="nav-item">
             {currentUser ? (
               <Link
@@ -44,7 +35,7 @@ const Navigation = () => {
                 to={`/`}
                 onClick={handleLogout}
               >
-                {currentUser.displayName} Logout
+                Logout as ({currentUser.displayName})
               </Link>
             ) : (
               <Link className="nav-item nav-link" to={`/login`}>
