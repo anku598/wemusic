@@ -36,7 +36,7 @@ function LoginForm() {
             </>
           ) : (
             <>
-              <h2 className="mb-4">Sign In</h2>
+              <h2 className="mb-4">Log in to listen your track</h2>
               <form onSubmit={handleSubmit}>
                 <div className="form-group mb-4 ">
                   <input
@@ -71,10 +71,20 @@ function LoginForm() {
                 </button>
               </form>
 
-              <p>
+              <p className="mt-3">
                 You don't have account? Go to{" "}
                 <Link to={"/signup"}>Sign Up</Link>{" "}
               </p>
+
+              <div className="demo-cred-info d-flex flex-column mt-5">
+                <h4>Demo Credentials</h4>
+                <span>
+                  <strong>Email:</strong> demo1@gmail.com
+                </span>
+                <span>
+                  <strong>Password:</strong> demo1254
+                </span>
+              </div>
             </>
           )}
         </div>

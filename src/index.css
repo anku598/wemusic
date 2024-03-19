@@ -8,16 +8,57 @@ body {
   width: 100%;
   height: 100%;
   overflow-x: hidden;
+  background: #ebf3e8;
+}
+
+a {
+  text-decoration: none;
+}
+
+.navbar-brand {
+  font-size: 1.5rem;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.form-control {
+  outline: none;
+  box-shadow: none;
+  border: none;
+  padding: 0.7rem 1.5rem;
+  background: #fff;
+  color: #fff;
+}
+
+.form-control:focus {
+  box-shadow: none;
 }
 
 #main-content {
   width: 85%;
   margin: 0 auto;
+  margin-bottom: 9rem;
+  margin-top: 2rem;
 }
+
+.navbar {
+  padding: 1.2rem 7.5%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  background: #ebf3e8;
+}
+
+.navbar-collapse {
+  flex-grow: 0;
+}
+
+/* track card container styles */
 
 .track-card-container {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
   gap: 1.2rem 1rem;
   margin-top: 1rem;
   margin-bottom: 1rem;
@@ -33,6 +74,8 @@ body {
 .list-item {
   padding: 1rem;
   border-radius: 20px;
+  position: relative;
+  /* max-width: 250px; */
 }
 
 .track-card-container img {
@@ -40,7 +83,55 @@ body {
   cursor: pointer;
 }
 
+.play-button {
+  border: none;
+  width: 16px;
+  height: 15px;
+  background: #bed754;
+  border-radius: 50%;
+  padding: 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  font-size: 14px;
+  color: #000;
+  opacity: 0;
+  transform: translateY(20px);
+  transition: all 0.2s ease-in-out;
+}
+
+.list-item:hover .play-button {
+  transform: translateY(0);
+  opacity: 1;
+}
+
 img {
   max-width: 100%;
   width: 100%;
+}
+
+.rhap_footer {
+  display: none;
+}
+
+.music-player {
+  position: fixed;
+  bottom: 0;
+  left: 0%;
+  width: 100%;
+}
+
+.rhap_container {
+  background: #f9f5f6;
+  padding: 1.1rem 2rem;
+}
+
+.rhap_header {
+  font-size: 1rem;
+  color: #579bb1;
+  text-transform: capitalize;
+  margin-bottom: 1rem;
 }

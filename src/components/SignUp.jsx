@@ -37,7 +37,7 @@ const SignUp = () => {
     <div className="container">
       <div className="row vh-100 align-items-center justify-content-center ">
         <div className="col-md-6 col-12">
-          <h2 className="mb-4">Sign In</h2>
+          <h2 className="mb-4">Registration </h2>
           <form onSubmit={handleSubmit}>
             <div className="form-group mb-4 ">
               <input
@@ -80,7 +80,7 @@ const SignUp = () => {
               type="submit"
               className="btn btn-primary mt-3 shadow"
             >
-              Submit Now
+              Register Now
             </button>
           </form>
         </div>

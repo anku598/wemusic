@@ -21,6 +21,7 @@ function App() {
                   </PrivateRoute>
                 }
               />
+
               <Route path="/login" exact element={<LoginForm />} />
               <Route path="/signup" exact element={<SignUp />} />
             </Routes>
