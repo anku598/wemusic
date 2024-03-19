@@ -1,8 +1,26 @@
-# React + Vite
+# We Music
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## _This is simple music player app for job task_
 
-Currently, two official plugins are available:
+live link : https://we-music-task.netlify.app/
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Installation
+
+The App requires [Node.js](https://nodejs.org/) v20+ to run.
+
+clone the repository and Install the dependencies and devDependencies.
+
+```sh
+cd your-project-folder
+npm install
+```
+
+create a `.env.local` file to your root directtory and copy all the Environment variables from `.env.example` and paste it to your `.env.local` file.
+
+Now to Run the server use
+
+```sh
+npm run dev
+```
+
+# Thank you
