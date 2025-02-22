@@ -1,6 +1,6 @@
 # We Music
 
-## _This is simple music player app for job task_
+## _This is simple music player app_
 
 live link : https://we-music-task.netlify.app/
 
